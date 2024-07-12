@@ -8,10 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import org.apache.logging.log4j.LogManager;//log4j
 import org.apache.logging.log4j.Logger;   //log4j
 
@@ -32,7 +29,7 @@ public class BaseClass {
 
     @BeforeClass(groups = {"Sanity","Regression", "Master"})
     @Parameters({"os","browser"})
-    public void setUp(String os, String br) throws IOException {
+    public void setUp( String os, String br) throws IOException {
 
         //Loading Config File
         FileReader file= new FileReader("./src//test//Resource//config.properties");

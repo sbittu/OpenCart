@@ -9,10 +9,11 @@
         <parameter name="os" value="window"></parameter>
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="TestCase.TC_001_AccountRegistrationTest"/>
+           <!-- <class name="TestCase.TC_001_AccountRegistrationTest"/>
             <class name="TestCase.TC_002_LoginTest"/>
-           <!-- <class name="TestCase.TC_003_loginDDT"></class>-->
-
+           <class name="TestCase.TC_003_loginDDT"></class>
+            <class name="TestCase.TC_004_SearchProductTest"></class>-->
+            <class name="TestCase.TC_005_AddToCartTest"></class>
         </classes>
     </test>
 
