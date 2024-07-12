@@ -2,13 +2,12 @@ package TestCase;
 
 import PageObjects.HomePage;
 import PageObjects.RegistrationPage;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TC_001_AccountRegistrationTest extends BaseClass  {
 
-    @Test(groups = {"Sanity", "Master"})
+    @Test
     public void verify_Account_Registration()
     {
         logger.info("Starting");
